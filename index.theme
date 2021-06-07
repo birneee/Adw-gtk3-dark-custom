@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Adwaita-custom
+Type=X-GNOME-Metatheme
+Comment=Adwaita Modified
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Encoding=UTF-8
+GtkTheme=Adwaita-custom
+IconTheme=Adwaita
+CursorTheme=Adwaita
+CursorSize=24
