@@ -1,5 +1,10 @@
 @import url("/usr/share/themes/Adwaita-maia-compact-dark/gtk-3.0/gtk.css");
 
+/* Change Font (if installed on system) */
+* {
+  font-family: JetBrains Mono;
+}
+
 /* Remove Overshoot Effect */
 scrolledwindow overshoot.top,
 scrolledwindow overshoot.top:backdrop,
@@ -13,7 +18,6 @@ scrolledwindow overshoot.right:backdrop {
 }
 
 /* Remove Border Radius */
-
 .background .titlebar:backdrop,
 .background .titlebar,
 window separator:first-child + headerbar:backdrop,
@@ -60,36 +64,32 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
 /* Make Borders White */
 .csd:not(.fullscreen) popover.background {
   border-radius: 0;
-  border-color: #cccccc;
+  border-color: @border;
 }
-
 decoration {
-  box-shadow: 0 3px 9px 1px rgba(0, 0, 0, 0.5), 0 0 0 1px #cccccc;
+  box-shadow: 0 3px 9px 1px rgba(0, 0, 0, 0.5), 0 0 0 1px @border;
 }
-
 decoration:backdrop {
   box-shadow: 0 3px 9px 1px transparent, 0 2px 6px 2px rgba(0, 0, 0, 0.2),
-    0 0 0 1px #cccccc;
+    0 0 0 1px @border;
 }
-
 .maximized decoration,
 .fullscreen decoration {
   box-shadow: none;
 }
-
 .ssd decoration {
-  box-shadow: 0 0 0 1px #cccccc;
+  box-shadow: 0 0 0 1px @border;
 }
-
 .ssd decoration:backdrop {
-  box-shadow: 0 0 0 1px #cccccc;
+  box-shadow: 0 0 0 1px @border;
 }
-
 .drop-shadow,
 .drop-shadow decoration {
-  box-shadow: 0 3px 9px 1px rgba(0, 0, 0, 0.5), 0 0 0 1px #cccccc;
+  box-shadow: 0 3px 9px 1px rgba(0, 0, 0, 0.5), 0 0 0 1px @border;
+}
+.csd.popup:not(.fullscreen) decoration {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 0 0 1px @border;
 }
 
-.csd.popup:not(.fullscreen) decoration {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 0 0 1px #cccccc;
-}
+@define-color maia #138a72;
+@define-color border #cccccc;

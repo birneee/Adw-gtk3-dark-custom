@@ -1,2 +1,37 @@
-/*@import url("/usr/share/themes/Adwaita-maia-compact-dark/gtk-4.0/gtk.css");
-*/
+@import url("/usr/share/themes/Adwaita-maia-compact-dark/gtk-4.0/gtk.css");
+
+/* Change Font (if installed on system) */
+* {
+    font-family: JetBrains Mono;
+}
+
+/* Remove Overshoot Effect */
+scrolledwindow overshoot.top,
+scrolledwindow overshoot.top:backdrop,
+scrolledwindow overshoot.bottom,
+scrolledwindow overshoot.bottom:backdrop,
+scrolledwindow overshoot.left,
+scrolledwindow overshoot.left:backdrop,
+scrolledwindow overshoot.right,
+scrolledwindow overshoot.right:backdrop {
+  background-image: none;
+}
+
+/* Remove Border Radius */
+window.csd,
+window.csd.popup,
+tooltip.csd
+{
+    border-radius: 0;
+}
+
+/* Make Borders White */
+window.csd {
+    box-shadow: 0 3px 9px 1px rgba(0, 0, 0, 0.5), 0 0 0 1px @border;
+}
+window.csd:backdrop {
+    box-shadow: 0 3px 9px 1px transparent, 0 2px 6px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px @border;
+}
+
+@define-color maia #138a72;
+@define-color border #cccccc;

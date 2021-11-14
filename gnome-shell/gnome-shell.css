@@ -1,5 +1,10 @@
 @import url("/usr/share/themes/Adwaita-maia-compact-dark/gnome-shell/gnome-shell.css");
 
+/* Change Font (if installed on system) */
+*, stage, #panel {
+    font-family: JetBrains Mono;
+}
+
 /**********************
  * Top Bar *
  *********************/
@@ -20,14 +25,15 @@
     /* box-shadow: 0 3px 9px 1px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.75); */
     /* border-color: #070707; */
     border-color: #cccccc;
-    border-width: 1px;
+    border-width: 0px;
+    /* border-bottom-width: 1px; */
     width: 400px;
 }
 
 #panelBox {
-    padding-top: 0.5em;
-    /* padding-left: 20em;
-    padding-right: 20em; */
+    /* padding-top: 0.5em; */
+    /* padding-left: 20em; */
+    /* padding-right: 20em; */
     background: transparent;
 }
 
@@ -39,13 +45,30 @@
     width: 0;
 }
 
+/* square panel buttons */
+#panel .panel-button,
+#panel .panel-button.clock-display .clock {
+    border-radius: 0;
+}
+
+/* panel underline */
+#panel > * {
+    border-color: #cccccc;
+    border-width: 0;
+    border-bottom-width: 1px;
+}
+
 #panel .panel-button.clock-display .clock {
     box-shadow: none;
 }
+
+#panel * {
+    icon-shadow: none;
+}
+
 #panel .panel-button.clock-display:hover .clock {
     box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.2);
 }
-
 
 #panel .panel-button .panel-status-indicators-box {
     spacing: 25px;
@@ -58,3 +81,6 @@
 #panelLeft {
     padding-left: 22px;
 }
+
+@define-color maia #138a72;
+@define-color border #cccccc;
