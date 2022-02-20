@@ -82,5 +82,13 @@
     padding-left: 22px;
 }
 
+.pop-shell-tab,
+.pop-shell-tab-active,
+.pop-shell-tab-urgent,
+.pop-shell-tab-inactive { 
+  border-radius: 10px 10px 0 0;
+  margin: 0 10px;
+}
+
 @define-color maia #138a72;
 @define-color border #cccccc;
