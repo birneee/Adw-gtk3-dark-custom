@@ -1,4 +1,4 @@
-@import url("/usr/share/themes/Adwaita-maia-compact-dark/gtk-3.0/gtk.css");
+@import url("/usr/share/themes/adw-gtk3/gtk-3.0/gtk-dark.css");
 
 /* Change Font (if installed on system) */
 * {
@@ -16,80 +16,3 @@ scrolledwindow overshoot.right,
 scrolledwindow overshoot.right:backdrop {
   background-image: none;
 }
-
-/* Remove Border Radius */
-.background .titlebar:backdrop,
-.background .titlebar,
-window separator:first-child + headerbar:backdrop,
-window separator:first-child + headerbar,
-window headerbar:first-child:backdrop,
-window headerbar:first-child,
-window headerbar:last-child:backdrop,
-window headerbar:last-child,
-window stack headerbar:first-child:backdrop,
-window stack headerbar:first-child,
-window stack headerbar:last-child:backdrop,
-window stack headerbar:last-child,
-.csd.popup decoration,
-tooltip.csd decoration,
-messagedialog .titlebar,
-messagedialog.csd decoration,
-.maximized decoration,
-.fullscreen decoration,
-decoration,
-decoration:backdrop,
-.ssd decoration,
-.ssd decoration:backdrop,
-.drop-shadow,
-.drop-shadow decoration,
-.csd.popup:not(.fullscreen) decoration,
-.tiled-top decoration,
-.tiled-top decoration:backdrop,
-.tiled-right decoration,
-.tiled-right decoration:backdrop,
-.tiled-bottom decoration,
-.tiled-bottom decoration:backdrop,
-.tiled-left decoration,
-.tiled-left decoration:backdrop,
-window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):not(.tiled-bottom):not(.tiled-left):not(.tiled-right):not(.maximized),
-window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):not(.tiled-bottom):not(.tiled-left):not(.tiled-right):not(.maximized)
-  > decoration,
-window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):not(.tiled-bottom):not(.tiled-left):not(.tiled-right):not(.maximized)
-  > decoration-overlay {
-  border-radius: 0;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-/* Make Borders White */
-.csd:not(.fullscreen) popover.background {
-  border-radius: 0;
-  border-color: @border;
-}
-decoration {
-  box-shadow: 0 3px 9px 1px rgba(0, 0, 0, 0.5), 0 0 0 1px @border;
-}
-decoration:backdrop {
-  box-shadow: 0 3px 9px 1px transparent, 0 2px 6px 2px rgba(0, 0, 0, 0.2),
-    0 0 0 1px @border;
-}
-.maximized decoration,
-.fullscreen decoration {
-  box-shadow: none;
-}
-.ssd decoration {
-  box-shadow: 0 0 0 1px @border;
-}
-.ssd decoration:backdrop {
-  box-shadow: 0 0 0 1px @border;
-}
-.drop-shadow,
-.drop-shadow decoration {
-  box-shadow: 0 3px 9px 1px rgba(0, 0, 0, 0.5), 0 0 0 1px @border;
-}
-.csd.popup:not(.fullscreen) decoration {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 0 0 1px @border;
-}
-
-@define-color maia #138a72;
-@define-color border #cccccc;

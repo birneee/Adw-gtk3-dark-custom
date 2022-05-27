@@ -1,12 +1,12 @@
 [Desktop Entry]
-Name=Adwaita-custom
+Name=Adw-gtk3-dark-custom
 Type=X-GNOME-Metatheme
 Comment=Adwaita Modified
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
 Encoding=UTF-8
-GtkTheme=Adwaita-custom
+GtkTheme=Adw-gtk3-dark-custom
 IconTheme=Adwaita
 CursorTheme=Adwaita
 CursorSize=24

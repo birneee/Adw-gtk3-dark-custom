@@ -1,4 +1,4 @@
-@import url("/usr/share/themes/Adwaita-maia-compact-dark/gnome-shell/gnome-shell.css");
+/*@import url("/usr/share/themes/Adwaita-maia-compact-dark/gnome-shell/gnome-shell.css");*/
 
 /* Change Font (if installed on system) */
 *, stage, #panel {
@@ -16,24 +16,16 @@
     padding: auto;
     font-size: .9em;
     height: 32px;
-    /* background-color: #353535; */
-    background-color: transparent;
-    /* border-radius: 8px; */
-    border-radius: 0;
-    /* text-shadow: rgba(0, 0, 0, 0.9) 0 2px 5px; */
-    border-top: 1px solid #333333;
-    /* box-shadow: 0 3px 9px 1px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.75); */
-    /* border-color: #070707; */
-    border-color: #cccccc;
-    border-width: 0px;
-    /* border-bottom-width: 1px; */
-    width: 400px;
+    background-color: #353535;
+    border-radius: 12px; 
+    border-color: rgba(255, 255, 255, 0.1);
+    border-width: 1px; 
 }
 
 #panelBox {
-    /* padding-top: 0.5em; */
-    /* padding-left: 20em; */
-    /* padding-right: 20em; */
+    padding-top: 0.5em;
+    /* padding-left: 0.5em;
+    padding-right: 0.5em; */
     background: transparent;
 }
 
@@ -43,19 +35,6 @@
 
 #panel .popup-menu-arrow {
     width: 0;
-}
-
-/* square panel buttons */
-#panel .panel-button,
-#panel .panel-button.clock-display .clock {
-    border-radius: 0;
-}
-
-/* panel underline */
-#panel > * {
-    border-color: #cccccc;
-    border-width: 0;
-    border-bottom-width: 1px;
 }
 
 #panel .panel-button.clock-display .clock {
@@ -79,15 +58,15 @@
 }
 
 #panelLeft {
-    padding-left: 22px;
+    padding-left: 0px;
 }
 
 .pop-shell-tab,
 .pop-shell-tab-active,
 .pop-shell-tab-urgent,
 .pop-shell-tab-inactive { 
-  border-radius: 10px 10px 0 0;
-  margin: 0 10px;
+  border-radius: 12px 12px 0 0;
+  margin: 0 12px;
 }
 
 @define-color maia #138a72;
