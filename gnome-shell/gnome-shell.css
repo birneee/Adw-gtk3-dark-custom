@@ -60,7 +60,22 @@
 .pop-shell-tab-urgent,
 .pop-shell-tab-inactive { 
   border-radius: 12px 12px 0 0;
-  margin: 0 12px;
+  margin: 0 8px;
+  font-weight: bold;
+  font-size: 0.85em;
+}
+
+.pop-shell-tab:first-child {
+    margin-left: 20px;
+}
+
+.pop-shell-tab:last-child {
+    margin-right: 20px;
+}
+
+/* hide icon and close button*/
+.pop-shell-tab ClutterActor:first-child {
+    width: 0;
 }
 
 @define-color maia #138a72;
