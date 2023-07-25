@@ -12,14 +12,15 @@
 #panel {
     padding: auto;
     font-size: .9em;
-    height: 32px;
+    height: 26px;
     background-color: #353535;
-    border-radius: 16px;
+    border-radius: 11px;
 }
 
 #panelBox {
     padding-top: 0.5em;
-    padding-right: 1px;
+    padding-right: 16px;
+    padding-left: 16px;
     background: transparent;
 }
 
@@ -52,30 +53,52 @@
 }
 
 #panelLeft {
-    padding-left: 0px;
+    padding-left: 8px;
 }
 
 .pop-shell-tab,
 .pop-shell-tab-active,
 .pop-shell-tab-urgent,
 .pop-shell-tab-inactive { 
-  border-radius: 12px 12px 0 0;
-  margin: 0 8px;
-  font-weight: bold;
-  font-size: 0.85em;
+  border-radius: 11px;
+  margin: 0 2px;
+  font-weight: 700;
+  color: #919191;
+  background-color: #242424;
+  height: 30px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
+.pop-shell-tab.pop-shell-tab-active {
+    color: #ffffff;
+    background-color: #303030;
+}
+
+.pop-shell-tab .icon {
+    width: 22px;
+    height: 22px;
+}
+
+.pop-shell-tab .close-button {
+    width: 0;
+    height: 18px;
+}
+
+
 .pop-shell-tab:first-child {
-    margin-left: 20px;
+    margin-left: 0;
 }
 
 .pop-shell-tab:last-child {
-    margin-right: 20px;
+    margin-right: 0;
 }
 
 /* hide icon and close button*/
 .pop-shell-tab ClutterActor:first-child {
-    width: 0;
+    /* width: 0; */
 }
 
 @define-color maia #138a72;
